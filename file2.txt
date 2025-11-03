@@ -1,0 +1,108 @@
+Devops Learning ​
+​
+                          Linux Basics​
+​
+​
+Pwd ​
+​
+Print working directory ​
+Shows the full absolute path of the directory you are currently working in.
+​
+Cd / etc​
+Navigate to /etc where Linux system configuration files are stored.​
+​
+Example​
+vvdn_8422@8422--CLD--POY:~$ cd /etc​
+vvdn_8422@8422--CLD--POY:/$ cd /etc​
+​
+Folder create Then list the content inside:
+vvdn_8422@8422--CLD--POY:/etc$ ls
+​
+acpi
+​ hdparm.conf
+​
+pnm2ppa.conf
+adduser.conf
+host.conf
+polkit-1
+alsa
+​ hostid
+​
+popularity-contest.conf
+alternatives
+​ hostname
+​
+ppp
+anacrontab
+​hosts
+​
+printcap
+​
+Ls -l​
+Detailed listing with
+Permissions
+Owner
+Group
+File type
+Modification date​
+​
+Example​
+vvdn_8422@8422--CLD--POY:/etc$ ls -l
+total 1156drwxr-xr-x 3 root root​4096 Mar 16 2023 acpi
+-rw-r--r-- 1 root root​ 3028 Mar 16 2023 adduser.conf
+drwxr-xr-x 3 root root​4096 Mar 16 2023 alsa
+drwxr-xr-x 2 root root​4096 Jun 4 16:12 alternatives
+-rw-r--r-- 1 root root ​ 401 Jul 17 2019 anacrontab
+-rw-r--r-- 1 root root ​ 433 Oct 2 2017 apg.conf
+Cd /var
+Change to /var ​
+Navigate to /var stores logs and runtime data.
+Example​
+vvdn_8422@8422--CLD--POY:~$ cd /var​
+​
+Directory change to list the files
+vvdn_8422@8422--CLD--POY:/var$ ls
+​
+backups crash local log metrics ossec snap tmp
+Cache ​lib lock mail opt run
+spool
+/etc/ssh ​
+just enters the directory ​
+It doesn’t open the SSH config files; it just moves you into the folder where those files are
+stored.
+​
+Example​
+vvdn_8422@8422--CLD--POY:~$ cd /etc
+vvdn_8422@8422--CLD--POY:/etc$ cd /etc/ssh
+​
+List the files​
+vvdn_8422@8422--CLD--POY:/etc/ssh$ ls -a
+.
+​ ssh_config.d ​
+ssh_host_ecdsa_key.pub​
+ssh_host_rsa_key.pub
+..
+​ sshd_config ​
+ssh_host_ed25519_key ​
+ssh_import_id
+moduli ​
+sshd_config.d ​
+ssh_host_ed25519_key.pub
+ssh_config ssh_host_ecdsa_key ssh_host_rsa_key
+​
+Cd ..​
+Previous go up 1 level ​
+​
+Example
+vvdn_8422@8422--CLD--POY:/etc/ssh$ cd ..​
+Cd~​
+Go to your home directory.
+vvdn_8422@8422--CLD--POY:/etc$ cd ~
+vvdn_8422@8422--CLD--POY:~$
+Cd /home ​
+Using the directories
+vvdn_8422@8422--CLD--POY:/home$ ls
+Administrator lost+found Quarantine vvdn_8422 vvsa
+vvdn_8422@8422--CLD--POY:/home$
+​
+​
